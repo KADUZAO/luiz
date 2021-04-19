@@ -1,0 +1,248 @@
+@font-face {
+    font-family: regular;
+    src: url(../font/MonumentExtended-Regular.otf);
+}
+
+@font-face {
+    font-family: ultra;
+    src: url(../font/MonumentExtended-Ultrabold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: regular, sans-serif;
+}
+
+.container {
+    background-image: url(../image/bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+header div, header p {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+}
+.logo img {
+    width: 5rem;
+    margin: 1rem 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p.two {
+    background-color: #1be797;
+    width: fit-content;
+    padding: 0.4rem 1rem 0 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.6);
+    margin: 0.3rem auto;
+    transition: 0.7s;
+}
+
+p.two:hover {
+    letter-spacing: 2px;
+    background-color: #17ce85;
+    cursor: none;
+}
+
+.conatinervideo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.conatinervideo .video {
+    width: 337px;
+    height: 600px;
+    background-color: #1be797;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.conatinervideo .video iframe {
+    border-radius: 1rem;
+}
+
+.persona img {
+    width: 14rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.button a {
+    display: flex;
+    text-decoration: none;
+    background-color: #1be797;
+    color: #fff;
+    padding: 0.4rem 1rem 0.3rem 1rem;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.button a p {
+    font-size: 1.5rem;
+}
+
+.what {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    background-color: #1be797;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.6);
+    padding-bottom: 2rem;
+}
+
+.content-what {
+    width: 80%;
+    margin: auto;
+}
+
+.what .title img {
+    display: grid;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.cards {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+    grid-gap: 20px;
+    padding-bottom: 2rem;
+}
+
+.card {
+    border: 5px solid #fff;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.card .image img {
+    display: grid;
+    width: 7rem;
+    margin: auto;
+}
+
+.card .text-medium p {
+    font-family: ultra, sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.creatives {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.creatives iframe {
+    border-radius: 1rem;
+}
+
+.creatives p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.creatives .title {
+    padding: 3rem 0;
+}
+
+.topcs {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.creative {
+    background-color: #1be797;
+    width: 282px;
+    height: 500px;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+div.feed {
+    height: 352px;
+}
+
+.creatives .button {
+    padding: 2rem 0 3rem;
+}
+
+footer div, footer p {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+#rotate-anim{
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+#circulo{
+    animation-name: zig;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
+@keyframes zig {
+    0%{
+        transform: translateX(-0.85rem);
+    }
+    50% {
+        transform: translateX(0.1rem);
+    }
+    100%{
+        transform: translateX(-0.85rem);
+    }
+}
